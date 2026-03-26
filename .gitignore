@@ -1,5 +1,4 @@
 # Ignore data files in the repository
-data/
 *.pkl
 *.geojson
 *.atx
