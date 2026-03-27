@@ -1,0 +1,54 @@
+[project]
+name = "co-datactrcostrev"
+version = "0.0.0"
+description = "Colorado data center cost and revenue map"
+readme = "README.md"
+license = "CCO-1.0"
+requires-python = ">=3.11,<3.14"
+authors = [
+    { name = "Richard W. Evans" },
+]
+keywords = [
+    "data visualization",
+    "geospatial",
+    "gis",
+    "bokeh",
+    "colorado",
+    "property tax",
+    "data center",
+    "geopandas"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "bokeh>=3.1.1",
+    "geopandas",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "requests",
+    "shapely",
+    "pathlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython",
+    "jupyter",
+]
+
+[tool.uv]
+package = false
+
+[project.urls]
+Repository = "https://github.com/OpenSourceEcon/CO-DataCtrCostRev"
+Issues = "https://github.com/OpenSourceEcon/CO-DataCtrCostRev/issues"

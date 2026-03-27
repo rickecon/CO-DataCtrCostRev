@@ -1,0 +1,3 @@
+# data/gdf directory in Colorado Data Center Cost and Revenue Map repository
+This `/data/gdf` directory contains the `GeoDataFrame` (GeoPandas DataFrame) data objects for each layer of the interactive map, saved as Python binary `.pkl` files. These data files are not saved in the GitHub repository because they exceed the GitHub file size limit for public repositories. But they can be created using the [`make_co_datactrcostrevmap()`]() function in the [`CO-DataCtrCostRev`]() module.
+- `/data/gdf/co_counties_.pkl`: Python binary `.pkl` file of `GeoDataFrame` object for Colorado county boundaries and county information.

@@ -1,0 +1,5 @@
+# data/shp directory in Colorado Data Center Cost and Revenue Map repository
+This directory has three subdirectories: `gdf/`, `geojson/`, and `shp/`. When the code runs, the data in each of these folders exceeds the GitHub file size limits for public repositories. This `README` file lists the data that will exist in each data subdirectory, how it is created, and where it comes from. But the main run script for this visualization, [`FL_DataCtrMap.py`](../FL_DataCtrMap.py), has all of these references as well. Because these data objects are large, and creating them and manipulating them can take nearly an hour of computation time, it is valuable to be able to store them on your hard drive and then use the functionality of the [`FL_DataCtrMap.py`](../FL_DataCtrMap.py) module to create the image based on data already saved (e.g., `make_fl_datactrmap(create_data=False)`). This approach takes less than a minute to create the visualization rather than nearly an hour.
+
+## The gdf directory
+The `/data/gdf/` directory contains the `GeoDataFrame` (GeoPandas DataFrame) data objects for each layer of the interactive map.
